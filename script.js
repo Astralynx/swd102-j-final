@@ -17,6 +17,13 @@ function submitAnswers(){
     else if(document.getElementById('result2')){
         document.getElementById('result2').innerHTML = "Incorrect!";
     }
+
+    if(document.getElementById('correct3').checked){
+        document.getElementById('result3').innerHTML = "Correct!";
+    }
+    else if(document.getElementById('result3')){
+        document.getElementById('result3').innerHTML = "Incorrect!";
+    }
 }
 
 
