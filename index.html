@@ -8,13 +8,26 @@
     <h1>Quiz App</h1>
     <div>
         <h4>What color does Red and Blue make?</h4>
-        <input type="radio">Orange<br>
-        <input type="radio">Black<br>
-        <input type="radio" id="correct1">Purple<br>
-        <input type="radio">Green<br>
+            <form>
+                <input type="radio" name="answers1">Orange<br>
+                <input type="radio" name="answers1">Black<br>
+                <input type="radio" name="answers1" id="correct1">Purple<br>
+                <input type="radio" name="answers1">Green<br>
+            </form>
+        <p id="result1"></p>
     </div>
     <div>
-        <button type="submit" onclick="calcScore()">Submit</button><br>
+        <h4>Solve: (10 x 2) &divide; 5 </h4>
+            <form>
+                <input type="radio" name="answers2">6<br>
+                <input type="radio" name="answers2" id="correct2">4<br>
+                <input type="radio" name="answers2">15<br>
+                <input type="radio" name="answers2">25<br>
+            </form>
+        <p id="result2"></p>
+    </div>
+    <div>
+        <button type="submit" onclick="submitAnswers()">Submit</button><br>
         <p id="score"></p>
     </div>
     
