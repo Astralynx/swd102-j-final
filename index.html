@@ -9,55 +9,56 @@
     <div>
         <h4>What color does Red and Blue make?</h4>
             <form>
-                <input type="radio" name="answers1">Orange<br>
-                <input type="radio" name="answers1">Black<br>
-                <input type="radio" name="answers1" id="correct1">Purple<br>
-                <input type="radio" name="answers1">Green<br>
+                <input type="radio" name="answers1" value="0">Orange<br>
+                <input type="radio" name="answers1" value="0">Black<br>
+                <input type="radio" name="answers1" id="correct1" value="1">Purple<br>
+                <input type="radio" name="answers1" value="0">Green<br>
             </form>
         <p id="result1"></p>
     </div>
     <div>
         <h4>Solve: (10 x 2) &divide; 5 </h4>
             <form>
-                <input type="radio" name="answers2">6<br>
-                <input type="radio" name="answers2" id="correct2">4<br>
-                <input type="radio" name="answers2">15<br>
-                <input type="radio" name="answers2">25<br>
+                <input type="radio" name="answers2" value="0">6<br>
+                <input type="radio" name="answers2" id="correct2" value="1">4<br>
+                <input type="radio" name="answers2" value="0">15<br>
+                <input type="radio" name="answers2" value="0">25<br>
             </form>
         <p id="result2"></p>
     </div>
     <div>
         <h4>What is the 4th planet from the Sun?</h4>
             <form>
-                <input type="radio" name="answers3">Neptune<br>
-                <input type="radio" name="answers3">Jupiter<br>
-                <input type="radio" name="answers3">Venus<br>
-                <input type="radio" name="answers3" id="correct3" >Mars<br>
+                <input type="radio" name="answers3" value="0">Neptune<br>
+                <input type="radio" name="answers3" value="0">Jupiter<br>
+                <input type="radio" name="answers3" value="0">Venus<br>
+                <input type="radio" name="answers3" id="correct3" value="1">Mars<br>
             </form>
         <p id="result3"></p>
     </div>
     <div>
         <h4>In music, what does the term 'piano' mean?</h4>
             <form>
-                <input type="radio" name="answers4">Play faster<br>
-                <input type="radio" name="answers4">Play slower<br>
-                <input type="radio" name="answers4" id="correct4">Play softer<br>
-                <input type="radio" name="answers4">Play louder<br>
+                <input type="radio" name="answers4" value="0">Play faster<br>
+                <input type="radio" name="answers4" value="0">Play slower<br>
+                <input type="radio" name="answers4" id="correct4" value="1">Play softer<br>
+                <input type="radio" name="answers4" value="0">Play louder<br>
             </form>
         <p id="result4"></p>
     </div>
     <div>
         <h4>What is the chemical symbol for Hydrogen?</h4>
             <form>
-                <input type="radio" name="answers5" id="correct5">H<br>
-                <input type="radio" name="answers5">Hy<br>
-                <input type="radio" name="answers5">He<br>
-                <input type="radio" name="answers5">Hg<br>
+                <input type="radio" name="answers5" id="correct5" value="1">H<br>
+                <input type="radio" name="answers5" value="0">Hy<br>
+                <input type="radio" name="answers5" value="0">He<br>
+                <input type="radio" name="answers5" value="0">Hg<br>
             </form>
         <p id="result5"></p>
     </div>
     <div>
-        <button type="submit" onclick="submitAnswers()">Submit</button><br>
+        <button type="submit" onclick="submitAnswers()">Submit</button>
+        <button type="button" onclick="grade()">Grade</button><br>
         <p id="score"></p>
     </div>
     
