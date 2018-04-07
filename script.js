@@ -21,6 +21,25 @@
 //     }
 // ];
 
+//     function grade(){
+//         const answers = myQuestions.answers;
+//         let score = 0;
+
+//         myQuestions.forEach( (questionNumber) => {
+            
+//             if(answers === answer){
+//                 score++;
+//                document.getElementById('score').innerHTML = "Your score is " + score + " out of 5";
+//             }
+//             else{
+//                document.getElementById('score').innerHTML = "Your score is " + score + " out of 5";
+//             }
+//         });
+//         grade();
+//     }
+// }
+
+
 function submitAnswers(){
 
     if(document.getElementById('correct1').checked){
@@ -58,23 +77,6 @@ function submitAnswers(){
         document.getElementById('result5').innerHTML = "Incorrect!";
     }
 }
-//     function grade(){
-//         const answers = myQuestions.answers;
-//         let score = 0;
-
-//         myQuestions.forEach( (questionNumber) => {
-            
-//             if(answers === answer){
-//                 score++;
-//                document.getElementById('score').innerHTML = "Your score is " + score + " out of 5";
-//             }
-//             else{
-//                document.getElementById('score').innerHTML = "Your score is " + score + " out of 5";
-//             }
-//         });
-//         grade();
-//     }
-// }
 
 function grade(){
 
