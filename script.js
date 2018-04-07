@@ -75,3 +75,22 @@ function submitAnswers(){
 //         grade();
 //     }
 // }
+
+function grade(){
+
+    let questions = document.getElementsByTagName('input');
+    let valueList = [];
+    let score = 0;
+    let display = "Your score is " + score + " out of 5";
+
+    for(let i = 0; i < questions.length; i++) {
+
+        valueList.push(questions[i].value);
+
+        if(questions[i].checked) {
+            score += Number(questions[i].value)
+        }
+    }
+    document.getElementById('score').innerHTML = display;
+    console.log(valueList);
+}
